@@ -1,0 +1,31 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $background-color;
+    padding: 7px 20px;
+    color: $primary-color;
+  
+    a:hover,
+    a.active {
+      color: #b74b4b;
+      border-bottom: 3px solid #b74b4b;
+    }
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  
+    li a {
+      color: $color;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+  
+  .logo img {
+    height: 60px;
+  }
+  

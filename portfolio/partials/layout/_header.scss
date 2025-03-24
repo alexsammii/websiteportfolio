@@ -1,0 +1,65 @@
+@use '../variables/variables' as *;
+@use '../mixins/mixins' as *;
+@use '../media/media' as *;
+
+header {
+  background: $background-color;
+  color: $primary-color;
+  padding: 40px 20px;
+
+  h1 {
+    justify-content: center;
+    font-size: 128px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 0;
+    @include respond(md) {
+      font-size: 64px;
+    }
+    @include respond(sm) {
+      font-size: 48px;
+    }
+  }
+
+  p {
+    font-size: 17px;
+    letter-spacing: 10px;
+  }
+
+  .name {
+    font-size: 45px;
+    justify-content: center;
+
+    h6 {
+      margin-bottom: 0;
+    }
+
+    h4 {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  }
+
+  button {
+    @include button-style($background-color, $color, $color);
+    margin-bottom: 0;
+
+    &:hover {
+      transform: scale(1.03);
+      background-color: #b74b4b;
+      color: black;
+      box-shadow: 0 0 25px #b74b4b;
+    }
+
+    a {
+      color: $primary-color;
+    }
+  }
+
+  img {
+    width: 450px;
+    height: 600px;
+    padding: 0;
+    margin-top: 0;
+  }
+}

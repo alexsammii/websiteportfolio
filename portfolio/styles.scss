@@ -1,0 +1,12 @@
+@use '/partials/variables/variables';
+@use '/partials/mixins/mixins';
+@use '/partials/media/media';
+
+@use '/partials/global/global';
+@use '/partials/components/buttons';
+@use '/partials/components/form';
+@use '/partials/components/nav';
+@use '/partials/layout/header';
+@use '/partials/layout/footer';
+@use '/partials/layout/grid';
+@use '/partials/home';

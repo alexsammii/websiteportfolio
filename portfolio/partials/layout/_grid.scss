@@ -1,0 +1,32 @@
+@use '../media/media' as *;
+
+.grid {
+    max-width: 900px;
+    margin: 10px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+  
+    > li {
+      width: calc(33.33% - 30px);
+      margin: 0 15px 30px;
+      overflow: hidden;
+      border-radius: 15px;
+      align-items: center;
+  
+      img {
+        max-width: 100%;
+        border-radius: 10px;
+      }
+  
+      @include respond(md) {
+        width: calc(50% - 30px);
+      }
+  
+      @include respond(sm) {
+        width: 100%;
+      }
+    }
+  }

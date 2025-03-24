@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/script.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="/assets/esig (black).png" alt="logo">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    
+    <section id="contact-form">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <button type="submit">Send</button>
+        </form>
+        <p id="formMessage"></p>
+    </section>
+    
+    <footer>
+        <div class="footer-container">
+            <a href="#" id="scrollTop">Back to Top</a>
+            <div class="social-icons">
+                <a href="#" target="_blank"><img src="/assets/icons8-linkedin-50.png" alt="linkedin"></a>
+                <a href="#" target="_blank"><img src="/assets/icons8-github-50.png" alt="github"></a>
+                <a href="mailto:alexsamson017@gmail.com"><img src="/assets/icons8-mail-50.png" alt="mail"></a>
+            </div>
+            <p>&copy; 2025 Samson. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
